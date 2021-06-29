@@ -398,9 +398,8 @@ function InstallChoco {
 
     InstallChoco
     InstallApps
-    ApplyDefaultApps
     ReclaimServer
-    AutomateShortcut
+    ApplyDefaultApps
     SonicLocalAdmin
     SetPCName
     RestartPC        
