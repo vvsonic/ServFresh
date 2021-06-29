@@ -382,7 +382,7 @@ function InstallChoco {
             }
         }        
         
-        function RestartPC{
+        function RestartServer{
             #Prompts if reboot is needed or not, if no will display message then end setup script#
             
             $reboot= [Microsoft.VisualBasic.Interaction]::MsgBox('Do  you want to Reboot the Server?' , 'YesNo,Information' , 'Reboot')
@@ -400,6 +400,6 @@ function InstallChoco {
     InstallApps
     ReclaimServer
     ApplyDefaultApps
-    SonicLocalAdmin
-    SetPCName
-    RestartPC        
+    #SonicLocalAdmin
+    SetServerName
+    RestartServer
