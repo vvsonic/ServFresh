@@ -16,7 +16,7 @@ function InstallChoco {
     }
 
     function ApplyDefaultApps {
-        dism /online /Import-DefaultAppAssociations:C:\Freshly\Freshly-main\AppAssociations.xml
+        dism /online /Import-DefaultAppAssociations:C:\Freshly\ServFresh-main\AppAssociations.xml
     }
     
     function ReclaimServer 
@@ -344,8 +344,8 @@ function InstallChoco {
            
     function SonicLocalAdmin{
         ###Create Sonic Support User and add as Local Admin###
-        $securepwdfilepath = 'C:\Freshly\Freshly-main\Cred\pass.file'
-        $AESKeyFilePath = 'C:\Freshly\Freshly-main\Cred\keys.txt'
+        $securepwdfilepath = 'C:\Freshly\ServFresh-main\Cred\pass.file'
+        $AESKeyFilePath = 'C:\Freshly\ServFresh-main\Cred\keys.txt'
         $AESKeyFile = Get-Content $AESKeyFilePath
         $pwdtxt = Get-Content $securepwdfilepath
         $passwd = $pwdtxt | ConvertTo-SecureString -Key $AESKeyFile
