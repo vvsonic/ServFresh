@@ -400,6 +400,6 @@ function InstallChoco {
     InstallApps
     ReclaimServer
     ApplyDefaultApps
-    #SonicLocalAdmin
+    SonicLocalAdmin
     SetServerName
     RestartServer
