@@ -1,5 +1,8 @@
 Set-ExecutionPolicy -ExecutionPolicy Bypass
 
+#Enable TLS 1.2 for older servers#
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 function InstallChoco {
     # Ask for elevated permissions if required
     If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")) {
