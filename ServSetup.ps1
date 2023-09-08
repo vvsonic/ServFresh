@@ -321,8 +321,8 @@ function InstallChoco {
         # If (!(Test-Path "HKCR:")) {
         #   New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
         # }
-        # Remove-Item -Path "HKCR:\Applications\photoviewer.dll\shell\open" -Recurse
-    }
+        # Remove-Item -Path "HKCR:\Applications\photoviewer.dll\shell\open" -Recurse 
+        # }
            
     function SonicLocalAdmin{
         ###Create Sonic Support User and add as Local Admin###
