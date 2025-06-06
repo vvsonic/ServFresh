@@ -15,7 +15,7 @@ function InstallChoco {
 
     function InstallApps {
         # Install the first set of applications. these are quick so ive added them separately
-        choco upgrade firefox microsoft-edge 7zip.install notepadplusplus.install everything --install-if-not-installed -y
+        choco upgrade firefox microsoft-edge 7zip.install notepadplusplus.install --install-if-not-installed -y
     }
 
     function ApplyDefaultApps {
